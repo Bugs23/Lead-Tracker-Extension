@@ -157,3 +157,15 @@ button {
   padding: 10px 20px;
   font-weight: bold;
 }
+
+ul {
+  margin-top: 20px;
+}
+
+li {
+  padding: 5px 0;
+}
+
+a {
+  color: #5f9341;
+}

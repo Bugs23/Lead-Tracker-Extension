@@ -9,6 +9,7 @@ let myLeads = [];
 // the value from the input field is added to the array and the list is re-rendered
 inputBtn.addEventListener("click", function () {
   myLeads.push(inputEl.value);
+  inputEl.value = ""; // Clear the input field after adding the lead
   renderLeads();
 });
 
@@ -19,7 +20,9 @@ function renderLeads() {
 
   // Loop through the myLeads array and create a list item for each lead
   for (let i = 0; i < myLeads.length; i++) {
-    listItems += "<li>" + myLeads[i] + "</li>";
+    listItems += `<li>
+        <a href='${myLeads[i]}' target='_blank'>${myLeads[i]}</a>
+      </li>`;
   }
 
   // Add the list items to the ul element
