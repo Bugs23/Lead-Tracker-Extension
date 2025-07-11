@@ -6,5 +6,7 @@
   "action": {
     "default_popup": "index.html",
     "default_icon": "public/icon.png"
-  }
+  },
+  "permissions": ["tabs"],
+  "host_permissions": ["<all_urls>"]
 }
